@@ -1,7 +1,10 @@
 <html>
 <head>
     <title>Dojo Fruit Store Assignment</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}">-->
 </head>
 <body>
 
@@ -24,8 +27,11 @@
         <section class="jumbotron text-center">
           <div class="container">
             <h1 class="jumbotron-heading">Dojo Fruits</h1>
-            <p>Please figure out how to display the images here...</p>
-
+            <p class="img">Please figure out how to display the images here...</p>
+            <img class="img-thumbnail" src="{{ url_for('static', filename='img/apple.png') }}">
+            <img class="img-thumbnail"src="{{ url_for('static', filename='img/blackberry.png') }}">
+            <img class="img-thumbnail"src="{{ url_for('static', filename='img/raspberry.png') }}">
+            <img class="img-thumbnail"src="{{ url_for('static', filename='img/strawberry.png') }}">
             <p>
               <a href="/" class="btn btn-primary my-2">Go back</a>
             </p>
